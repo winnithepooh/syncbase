@@ -35,7 +35,7 @@ jobs:
       - name: Build Storybook
         run: yarn workspace @syncbase/web build-storybook
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@v10
         with:
           skip: ${{ steps.changes.outputs.ui == 'false' }}
           projectToken: 64e3a9911647
